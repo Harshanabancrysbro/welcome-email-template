@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Varela Round, "Segoe UI", "Arial", "san serif";
+}
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 100px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right top, #8f6dff, #9477ff, #9981ff, #9e8bff, #a494ff); 
+}
+
+.img-div img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.brack-line{
+  border: 1.5px solid;
+  background: #8E6DFC;
+  border-color: #8E6DFC;
+  margin-bottom: 20px;
+}
+.card-textarea{
+  margin:0 15px 15px 15px;
+}
+.card-textarea_p{
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  color: #8E6DFC;
+}
+.card-textarea_p-span{
+  color:#9F2B68 ;
+}
+.card-footer{
+  margin:0 15px 15px 15px;
+  background-color: #CF9FFF;
+  padding: 4px;
+  border-radius: 15px;
+}
+.card-footer-p{
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+.card-details{
+    margin:0 15px 15px 15px;
+    text-align: start;
+}
+.card-details-div{
+    margin-top: 3px;
+}
+.card-details-main_lable{
+    font-size: 15px;
+    font-weight: bold;
+    color: #702963;
+}
+.card-details-sub_lable{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #36454F;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-div" style="margin-top: 15px;">
+            <img src="https://lh3.googleusercontent.com/pDaAeg5-wf6RB0LxsvtiPdbq2AeoyaZfwORdVOg1_HiqNw-ocA06Nh5KXkH2yfAN-y6MboyhzZHw2ypXT2ov8AMxYpfme5H7JEx_brjhI-lWYDsx1UWVn195Sahl7lpyT8HG2F3aGhKVGltD0QZsEQxxDd7WWzLNI3qUrBtxkyQPuWYmjVHx1IhUo7xwBE33d-959yie_rlpDKWb0o7TePQu3T5wVFlqdKezEOcTy-_ghfzs_9ckQDZGehB4-wYDxxrUVenVTvB3W993i0LnEBkQtknLOsPbHhdCUKGVR_qylo2rogNXZK5gE9_ChuW2MQTi2-tvWb7DCkT5WH4NgK7vi2MoK0ICIbu7bBXk_66El6w020Az8NmKbepU-gat_K1XgafrOsHhX_qaJGtY3VzVKhF-TvrXoB5EiWNgDQlEyBNwPCeSIfJpH3x_fUM85OY4YOJzzztdz7tShWX6jJdQETtmPR-EGtKO3Twy7G8RCBV1_5TCukl72ScNEia-tj-M_iz19kvOFUMa_HO3NFya6TwXpa0daOzPgCCSNQkHDIoS9CujKu8YkYKBB_VDbn-KOaRu6MWMfUpT7ASNS5STL67Z-9ohs7xn-ICB-DfOx1tL9iBZeuHe1hbarFN51XUH0wqNkg2d-N8bLonPRLT8pwGAPmLMB6evXrB9jiN_WIZhsVUlZ7HotY87lZ-6plUdlffpiDr-klJ9OndpolAsG_dvdQ-xI50IEmm5L5i1kceF9RC0NffuNe-uyVxgl7oebXmeCKER94pUyKMRsLT2aPt3Dff-Zhjyd8UhdjeN5rSqwbVy1gl5wsqomUGE6h-LOBI-FKTKIciQyHh5JPc8ABwavAQ_Hz9BRjX7mhVbAwn-konFDhxakK8XaVnbjeMzouHSZ7az8LlOuKK-gX0Uw2JZ8LfCyG34fmMObtm4WudE4Y58uBrp-P08pcLbV7GUKt24wUEXiPScVl26=w943-h649-no?authuser=1" alt="">
+        </div>
+        <div class="brack-line"></div>
+        <div class="card-textarea">
+            <p class="card-textarea_p">
+                SupportTicket <span class="card-textarea_p-span">{supportTicketVM.SupportTicket.SupportTicketNumber}</span> is assigned
+            </p>
+        </div>
+        <div class="brack-line"></div>
+        <div class="card-details">
+            <div class="card-details-div">
+                <label class="card-details-main_lable">1) Ticket number</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SupportTicketNumber}</label>
+            </div>            
+            <div class="card-details-div">
+                <label class="card-details-main_lable">2) Title</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SupporTicketTitle}</label>
+            </div>
+            <div class="card-details-div">
+                <label class="card-details-main_lable">3) Requested by</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SupporTicketRequestedBy}</label>
+            </div>
+            <div class="card-details-div">
+                <label class="card-details-main_lable">4) Developer</label> - <label class="card-details-sub_lable">{item.DeveloperOrTechnicianName}</label>
+            </div>
+            <div class="card-details-div">
+                <label class="card-details-main_lable">5) Complain date</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SupportTicketDate.ToString("MM/dd/yyyy")}</label>
+            </div>
+            <div class="card-details-div">
+                <label class="card-details-main_lable">6) Assign date</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SupporTicketAssignDate?.ToString("MM/dd/yyyy")}</label>
+            </div>
+            <div class="card-details-div">
+                <label class="card-details-main_lable">7) Due date</label> - <label class="card-details-sub_lable">{supportTicketVM.SupportTicket.SuporTicketDueDate?.ToString("MM/dd/yyyy")}</label>
+            </div>                                                    
+        </div>
+        <div class="brack-line"></div>
+        <div class="card-footer">
+          <p class="card-footer-p">CRYSBRO Group of Companies. Design and Developed by IT Division</p>
+        </div>
+    </div>
+</body>
+</html>

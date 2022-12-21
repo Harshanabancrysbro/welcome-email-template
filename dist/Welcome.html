@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ <style>
+  @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Varela Round, "Segoe UI", "Arial", "san serif";
+}
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 100px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right top, #8f6dff, #9477ff, #9981ff, #9e8bff, #a494ff); 
+}
+.img-div img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.brack-line{
+  border: 1.5px solid;
+  background: #8E6DFC;
+  border-color: #8E6DFC;
+  margin-bottom: 20px;
+}
+.card-textarea{
+  margin:0 15px 15px 15px;
+}
+.card-textarea_p{
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  color: #8E6DFC;
+}
+.card-textarea_p-span{
+  color:#9F2B68 ;
+}
+.card-footer{
+  margin:0 15px 15px 15px;
+  background-color: #CF9FFF;
+  padding: 4px;
+  border-radius: 15px;
+}
+.card-footer-p{
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+ </style>
+</head>
+<body>
+<div class="container">
+  <div class="img-div">
+    <img src="https://lh3.googleusercontent.com/fMl2SmEQTJ3p6RGrboojT1q1wFSqTs-LHhv20hvapl9WFCl96cKO3EcPyv0wrcgCq8UgY4XeP2ZjNMKTRyUZRs7pQEC3-bzYuv0kiNQfO-iLKNTrpybLZg1I47I1GzA0YWjgG9mmYOv19ChvsxkP77SOlJCJSy8Fj5b_YVyzCTfva-wmbSTk960tC8z_F_hcg7WzBzoYkMfXVa9sFVdvVGVl5M_4loHacimbZyyiEBgy-F5pVkpYjqdfzjyBot055BZvDMHikLy3HcXxfyhwDl1-IYoYThlQfv8QD8MPcfx8eyGH2tKB0KTi5-wbXbDfDaYA7CQiE8OqSPijdqZESECMZ9QU7LykrK5Q3K6M8t9v4Ii6KPExO08nrLTXAavlP13w5pEmdU2kRywc8QR1LAw8WO-ywHQvQfF_Wgp6eqVyZCvBPWnXzRCdeQuM5qa2WsDIxUhRRiTBNcXKhZWSsy-jVsdO4_mIDP_ByGHLn3EwlT27HaCjtJCd7ssOTAzzca3GG2NQVPFWdT5g6emOyaydUXvhtSDy9MruIN6EftyHaPPH5hj4Z-eafwLbyXLm8GKD3VAGhJ0ShFMDQa11GxGezzlCr1xmu2EieAk9hz3zgLMDBmNo6iGZId_cqkLFOqxae0SouTGnPJJ6qUur_UCkSpnCoC-vPcV_wzHGL92c73stbtNn68kET2dFC0SIfgl4gFcsnAxSUcCkT31tj1zTvIWNB1fB__HUuIMhDxw8j9lgFq8r4YUmBnImhj8AXcaPD-3sU10Rn6R1KS-YbxAQ_mfYp_c3-RAIxGoJ5q-bs9lk3hZDYm0ulalEmwpo2LLXuZP4R7h--lcWRkUPO5SDUwyh1saG7vNCGnXzNUyy2yT_MTA7TbpT4SWT8Bn1YRekDnxfXk8rsDfg3GJK-NS6gMMBu0m1874Vm8Cly7MPE1WsL96gm-Fj-cDRUyq52ziaaYuJSJR_884JyMBJ=w900-h505-no?authuser=1" alt="">
+  </div>
+  <div class="brack-line"></div>
+  <div class="card-textarea">
+    <p class="card-textarea_p">
+      Hello <span class="card-textarea_p-span">{user.Name}</span>. welcome to the crysbro helpdesk system
+    </p>
+  </div>
+  <div class="brack-line"></div>
+  <div class="card-footer">
+    <p class="card-footer-p">CRYSBRO Group of Companies. Design and Developed by IT Division</p>
+  </div>
+</div>
+</body>
+</html>
